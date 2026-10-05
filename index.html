@@ -1,0 +1,171 @@
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garimpo</title>
+    <link rel="icon" type="image/png" href="img/logofooter.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#garimpos">Garimpos</a>
+            <a href="#pecas">Peças</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+
+       <div class="acoes">
+            <button>𓆩♡𓆪</button>
+            <button id="botaoCarrinho">🛒</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-texto">
+
+                <p>Brechó online</p>
+
+                <h1>Garimpe<br>Encontre<br>Reuse</h1>
+
+                <p>Peças únicas procurando uma nova história</p>
+
+                <button class="btn">Explorar peças</button>
+            </div>
+
+            <div class="hero-imagem">
+                <img src="img/image1.png" alt="">
+            </div>
+        </section>
+
+        <section id="garimpos">
+            <h2>Encontre seu garimpo</h2>
+            <div class="categorias">
+
+                <div class="categoria">
+                    <h3>00's</h3>
+                    <p>Estilo dos anos 2000</p>
+                </div>
+            
+                <div class="categoria">
+                    <h3>Vintage</h3>
+                    <p>Peças com história</p>
+                </div>
+
+                <div class="categoria">
+                    <h3>Streetwear</h3>
+                    <p>Estilo urbano</p>
+                </div>
+
+                <div class="categoria">
+                    <h3>Até $50</h3>
+                    <p>Achadinhos</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pecas">
+            <h2>Garimpos recentes</h2>
+            <div class="produtos">
+                <article class="produto">
+                    <img src="img/image2.png" alt="">
+                    <h3>Jaqueta Vintage</h3>
+                    <p>Tamanho M</p>
+                    <strong>R$79,90</strong>
+                   <button onclick="adicionarCarrinho('Jaqueta Vintage', 79.90, 'img/image2.png')">
+                        Adicionar ao carrinho
+                    </button>
+                </article>
+
+                <article class="produto">
+                    <img src="img/image3.png" alt="">
+                    <h3>Vestido Floral</h3>
+                    <p>Tamanho P</p>
+                    <strong>R$19,90</strong>
+                    <button onclick="adicionarCarrinho('Vestido Floral', 19.90, 'img/image3.png')">
+                        Adicionar ao carrinho
+                    </button>
+                </article>
+
+                <article class="produto">
+                    <img src="img/image4.png" alt="">
+                    <h3>Calça Jeans</h3>
+                    <p>Tamanho 36</p>
+                    <strong>R$29,90</strong>
+                    <button onclick="adicionarCarrinho('Calça Jeans', 29.90, 'img/image4.png')">
+                        Adicionar ao carrinho
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <h2>Uma peça. Uma nova historia.</h2>
+            <p>No garimpo, acreditamos que uma roupa não precisa ser nova para ser
+                especial. Encontramos peças únicas e damos a elas 
+                oportunidades de começar uma nova oportunidade 
+            </p>
+        </section>
+
+        <section class="cta">
+            <h2>Pronto para encontrar seu próximo achado?</h2>
+            <button class="btn">Começar</button>
+        </section>
+    </main>
+
+    <footer>
+
+        <div>
+            <h3>GARIMPO</h3>
+            <p>Peças únicas. Novas histórias.</p>
+        </div>
+
+        <div>
+            <a href="#">Instagram</a>
+            <a href="#">Contato</a>
+        </div>
+
+        <p>© 2026 Garimpo</p>
+
+    </footer>
+
+    <!-- CARRINHO -->
+<div id="carrinho" class="carrinho">
+
+    <div class="carrinho-header">
+        <h2>Seu carrinho</h2>
+        <button id="fecharCarrinho">✕</button>
+    </div>
+
+    <div id="itensCarrinho">
+        <p class="carrinho-vazio">Seu carrinho está vazio.</p>
+    </div>
+
+    <div class="carrinho-footer">
+
+        <div class="total">
+            <span>Total:</span>
+            <strong id="totalCarrinho">R$ 0,00</strong>
+        </div>
+
+        <button class="finalizar">
+            Finalizar compra
+        </button>
+
+    </div>
+
+</div>
+
+<div id="fundoCarrinho"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
